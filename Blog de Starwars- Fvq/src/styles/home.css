@@ -1,0 +1,23 @@
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/pink-galaxy-3840-x-2160-background-7vwiftgoyoqvfvdn.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    color: white; 
+    margin: 0; 
+  }
+
+  .navbar {
+    background-color: transparent; 
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  
+  
+  
+  
+  
