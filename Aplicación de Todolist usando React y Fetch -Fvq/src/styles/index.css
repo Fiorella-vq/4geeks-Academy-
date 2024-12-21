@@ -1,0 +1,44 @@
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
+body {
+  background-color: rgb(190, 103, 148);
+}
+
+h1 {
+  font-family: "Edu AU VIC WA NT Dots", cursive;
+  font-optical-sizing: auto;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 110px;
+}
+.card {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.btn-close:hover {
+    background-color:rgb(205, 48, 142) ; 
+    cursor: pointer; 
+  }
+  
+  .mylist-item .btn-close {
+    visibility: hidden;
+  }
+  
+  .mylist-item:hover .btn-close {
+    visibility: visible;
+  }
+  
+  
