@@ -1,0 +1,17 @@
+{
+	"status": "published",
+	"title" : "Building Instagram.com Database Model",
+	"slug" : "instagram-data-modeling",
+	"duration" : 3,
+	"difficulty": "easy",
+	"solution": "https://github.com/breatheco-de/exercise-instagram-data-modeling/tree/solution",
+	"preview": "https://github.com/breatheco-de/exercise-instagram-data-modeling/blob/master/assets/preview.png?raw=true",
+	"technologies": ["sql", "sqlalchemy", "uml", "data-modeling"],
+	"syntax": "python",
+	"description" : "Use your recently adquired knowledge to build instagram.com user stories",
+	"talents": [
+		{ "badge": "fully-committed", "points": 5 }
+	],
+    "autoPlay": false,
+    "projectType": "project"
+}
