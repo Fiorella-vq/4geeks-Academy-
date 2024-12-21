@@ -1,0 +1,41 @@
+
+body{
+  background-color:rosybrown
+} ;
+
+.card-body {
+  display: flex !important;
+  margin: 0.5%;
+  width: 6.5vh;
+  height: 10vh;
+  border-radius: 1vh;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+  font-size: 5vh;
+
+}
+
+.card-title {
+  font-size: 5vh;
+}
+
+@media (max-width: 768px) {
+  .card-body {
+    font-size: 3vh;
+   
+  }
+  .card-title {
+    font-size: 3vh;
+  }
+}
+
+.pink-background {
+  background-color: rgb(225, 188, 208);
+  color: black;
+}
+
+
+#finDelMundo{
+  background-color:cornsilk;
+} ;
