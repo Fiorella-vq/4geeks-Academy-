@@ -1,0 +1,24 @@
+.shoppingCart .close{
+    background-color: gray;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.shoppingCart .pay{
+    background-color: green;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.shoppingCart .listCart .foodImage img{
+    width: 50px;
+    padding: 5px;
+}
+
+.shoppingCart .listCart .cantidad span:nth-child(2){
+    background-color: transparent;
+    color: #3865e5;
+}
+

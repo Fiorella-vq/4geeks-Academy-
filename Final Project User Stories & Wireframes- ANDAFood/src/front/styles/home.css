@@ -1,0 +1,225 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+body{
+
+}
+.form{
+    background-color: white;
+    padding: 20px;
+}
+
+.content{
+    margin-bottom: 200px ;
+}
+
+footer {
+    height: 120px;
+    background-color: #3865e5;
+    color: white;
+    text-align: center;
+
+}
+.andalogo{
+    width:90px;
+}
+
+.loginimage{
+    width: 350px;
+}
+
+.login{
+    padding-top: 160px;
+}
+
+.registeruser{
+    width:70px;
+}
+
+
+.input{
+    border-top:0px;
+    border-right:0px;
+    border-left:0px;
+    border-bottom:2px solid black;
+
+}
+
+.spinner-grow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1050;
+  }
+  
+.dropdown-item{
+    color: rgb(56, 101, 229);
+}
+
+/* boton cerrar sesión */
+.logout{
+    background-color: red;
+    color:white;
+    border-radius: 10px ;
+    border: none;
+    padding:10px;
+}
+
+.logout:hover{
+    background-color: rgb(223, 24, 24);
+    color:white;
+    border-radius: 10px ;
+    border: none;
+    padding:10px;
+    transform: scale(1.1);
+
+}
+.logout2{
+    background-color: grey;
+    color:rgb(255, 255, 255);
+    border-radius: 10px ;
+    border: none;
+    padding:6px;
+}
+
+
+
+/* link cuestionario */
+.custom-link {
+    text-decoration: none !important; /* Quita el subrayado */
+  
+  }
+  .feedbacklink{
+    padding:10px;
+  }
+
+  .feedbacklink:hover {
+    background-color: #e9ecefb0;
+    border-radius: 10px;
+
+  }
+
+/* cart  */
+
+.canvasheader{
+    background-color:#3865e5;
+}
+
+.close{
+    background-color: rgba(128, 128, 128, 0.438) !important;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.pay{
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.coloroffcanvas{
+    background-color: rgb(255, 255, 255) !important;
+}
+/* admin menu */
+.adminmenu{
+    margin-bottom: 100px;
+    
+}
+
+.admincomedor{
+    margin-bottom: 100px;
+    background-color:#3865e5;
+    padding: 20px;
+    color:white
+}
+
+.menuadmin{
+    width: 200px;
+}
+.menuadmin2{
+    height: 195px;
+    width: 150px;
+}
+
+.cardadmin:hover{
+transform: scale(1.2);
+-webkit-box-shadow: -1px 4px 17px 0px rgba(0,0,0,0.17);
+-moz-box-shadow: -1px 4px 17px 0px rgba(0,0,0,0.17);
+box-shadow: -1px 4px 17px 0px rgba(0,0,0,0.13);
+border-radius: 10px;
+}
+
+.notification {
+    background-color: rgb(56, 101, 229);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px; /* Cambiado de 'top' a 'bottom' */
+    right: 20px; /* Sigue manteniendo la posición derecha */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la lista */
+.cart-list-container {
+    max-height: 300px; /* Ajusta la altura máxima del carrito */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    margin-bottom: 60px; /* Asegura espacio para los botones */
+    padding: 10px; /* Añade espacio interno */
+    border: 1px solid #ddd; /* Opcional: bordes para separar visualmente */
+    border-radius: 10px;
+  }
+  
+  /* Botones fijos */
+  .btn-container {
+    position: sticky; /* Los botones siguen visibles al final */
+    bottom: 0; /* Pegados al fondo del contenedor padre */
+    background-color: white; /* Fondo para que se superpongan correctamente */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd; /* Opcional: línea superior */
+  }
+  
+/* boton login */
+/* From Uiverse.io by catraco */ 
+.botonlogin {
+    --color: #3d8bfd;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    border: none;
+    background-color: #3d8afd;
+  }
+
+  .botonlogin:hover{
+    transform: scale(1.1)
+  }
+
+  .trans:hover{
+    transform: scale(1.2)
+  }
+
+  .register{
+    margin-top: 100px;
+  }
+  
+ .sendemail{
+    margin-bottom: 145px ;
+ }
+
+ .reserva{
+    padding-top:40px;
+    padding-bottom:50px;
+ }
+
+ .reservations{
+    background-color: #3d8afd ;
+ }
