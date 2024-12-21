@@ -1,0 +1,27 @@
+/*
+    home.css: This website contains selectors only used in home.css
+
+    All pages share the styles on index.css but you should create 
+    one more css for each page that will contain the selected used 
+    on that page only (the ones not reused in other pages).
+*/
+body {
+    background-image: url("https://www.shutterstock.com/image-vector/abstract-set-avocado-whole-halves-260nw-2269784905.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+.footer {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #f8f9fa;
+    z-index: 1000; 
+}
+
