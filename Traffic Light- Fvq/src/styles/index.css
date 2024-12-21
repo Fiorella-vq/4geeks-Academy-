@@ -1,0 +1,19 @@
+  
+   
+.onLightRed {
+  -webkit-box-shadow: 17px 18px 145px 61px red;
+  -moz-box-shadow: 17px 18px 145px 61px red;
+  box-shadow: 17px 18px 145px 61px red;
+}
+
+.onLightYellow {
+  -webkit-box-shadow: 17px 18px 145px 61px rgba(211,230,87,1);
+  -moz-box-shadow: 17px 18px 145px 61px rgba(211,230,87,1);
+  box-shadow: 17px 18px 145px 61px rgba(211,230,87,1);
+}
+
+.onLightGreen {
+  -webkit-box-shadow: 17px 18px 145px 61px green;
+  -moz-box-shadow: 17px 18px 145px 61pxr green;
+  box-shadow: 17px 18px 145px 61px green;
+}
