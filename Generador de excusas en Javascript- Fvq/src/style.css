@@ -1,0 +1,13 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+p {
+  background-color: aquamarine;
+  border-radius: 3px;
+  font-size: 30px;
+  font-family: "Protest Guerrilla", sans-serif;
+  display: flex;
+  text-align: center;
+}
+
+img {
+  border-radius: 3px;
+}
