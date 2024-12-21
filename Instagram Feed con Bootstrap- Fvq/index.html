@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .nav-tabs .nav-link.active {
+            color: blue;
+        }
+
+        .nav-tabs .nav-link {
+            color: grey;
+        }
+
+        .card {
+            padding: 1rem;
+        }
+
+        .card-body {
+            padding: 0%;
+        }
+
+        .card-footer {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        h5 {
+            font-size: 15px;
+            display: flex;
+            margin: 3px;
+        }
+
+        p {
+            display: flex;
+            margin: 3px;
+        }
+
+        .card {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+
+            <div class="d-flex align-items-center">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Caption</label>
+                                        <textarea class="form-control" id="message-text"
+                                            placeholder="Add the caption of your post here"></textarea>
+                                    </div>
+
+                                    <div class="iconos">
+                                        <i
+                                            class="fa-solid fa-camera border border-secondary p-2 border-opacity-25 rounded"></i>
+                                        <i
+                                            class="fa-solid fa-location-dot border border-secondary p-2 border-opacity-25 rounded"></i>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><a class="dropdown-item text-danger border-top" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--iconos superiores-->
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="table-cell-tab" data-bs-toggle="tab" data-bs-target="#table-cell-pane"
+                type="button" role="tab" aria-controls="table-cell-pane" aria-selected="true">
+                <i class="fa-solid fa-table-cells"></i>
+            </button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="square-tab" data-bs-toggle="tab" data-bs-target="#square-pane" type="button"
+                role="tab" aria-controls="square-pane" aria-selected="false">
+                <i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+
+    <section class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="table-cell-pane" role="tabpanel" aria-labelledby="table-cell-tab">
+            <div class="container-fluid p-2">
+                <div class="row g-2">
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://hawksspawn.github.io/HawksSpawn-Instagram-Photo-Feed-With-Bootstrap/images/pexels-helena-lopes-2253275.jpg"
+                            class="img-thumbnail" alt="perrito"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/2.jpg?raw=true"
+                            class="img-thumbnail" alt="personas"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/3.jpg?raw=true"
+                            class="img-thumbnail" alt="paisaje"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/4.jpg?raw=true"
+                            class="img-thumbnail" alt="mujer sonriendo"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/5.jpg?raw=true"
+                            class="img-thumbnail" alt="paris"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/6.jpg?raw=true"
+                            class="img-thumbnail" alt="cr7"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/7.jpg?raw=true"
+                            class="img-thumbnail" alt="familia"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/8.jpg?raw=true"
+                            class="img-thumbnail" alt="codigo"
+                        >
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/9.jpg?raw=true"
+                            class="img-thumbnail" alt="clases"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content justify-content-center" id="myTabContent">
+        <div class="tab-pane fade" id="square-pane" role="tabpanel" aria-labelledby="square-tab">
+            <div class="container-fluid p-2 d-flex justify-content-center">
+                <div class="card text-center m-0 p-0">
+                    <div class="card-header d-flex justify-content-between">
+                        My crazy dog Spark!
+                        <p>08/26</p>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="https://hawksspawn.github.io/HawksSpawn-Instagram-Photo-Feed-With-Bootstrap/images/pexels-helena-lopes-2253275.jpg"
+                            class="img-thumbnail" alt="perrito"
+                        >
+                    </div>
+
+                    <div class="card-footer">
+                        <h5><strong>204 Likes</strong></h5>
+                        <p>This an example of a very good photo that you can post on instagram </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid p-2 d-flex justify-content-center">
+                <div class="card text-center m-0 p-0">
+                    <div class="card-header d-flex justify-content-between">
+                        The greatness of Croatia
+                        <p>04/09</p>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/3.jpg?raw=true"
+                            class="img-thumbnail" alt="paisaje"
+                        >
+                    </div>
+
+                    <div class="card-footer">
+                        <h5><strong>26985 Likes</strong></h5>
+                        <p>This an example of a very good photo that you can post on instagram </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid p-2 d-flex justify-content-center">
+                <div class="card text-center m-0 p-0">
+                    <div class="card-header d-flex justify-content-between">
+                        Amazing GOAL by Cristiano!
+                        <p>06/10</p>
+                    </div>
+
+                    <div class="card-body">
+                        <img src="https://github.com/4GeeksAcademy/instagram-photo-feed-bootstrap-ademontel/blob/main/img/6.jpg?raw=true"
+                            class="img-thumbnail" alt="cr7"
+                        >
+                    </div>
+
+                    <div class="card-footer">
+                        <h5><strong>204 Likes</strong></h5>
+                        <p>This an example of a very good photo that you can post on instagram </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
